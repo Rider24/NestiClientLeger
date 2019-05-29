@@ -18,7 +18,7 @@
 class PdoLafleur
 {   		
       	private static $serveur='mysql:host=localhost';
-      	private static $bdd='dbname=lafleur';   		
+      	private static $bdd='dbname=';   		
       	private static $user='root' ;    		
       	private static $mdp='' ;	
 		private static $monPdo;

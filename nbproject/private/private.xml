@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/Php/NestiClientLeger/requetes/Update.php</file>
+            <file>file:/C:/wamp64/www/Php/NestiClientLeger/vues/v_bandeau.php</file>
             <file>file:/C:/wamp64/www/Php/NestiClientLeger/PDO/PDONesti.php</file>
             <file>file:/C:/wamp64/www/Php/NestiClientLeger/controleurs/c_voirProduits.php</file>
             <file>file:/C:/wamp64/www/Php/NestiClientLeger/vues/v_categories.php</file>
+            <file>file:/C:/wamp64/www/Php/NestiClientLeger/util/class.pdoLafleur.inc.php</file>
         </group>
     </open-files>
 </project-private>
