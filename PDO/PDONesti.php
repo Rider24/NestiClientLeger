@@ -28,7 +28,7 @@ class PDONesti {
 		PdoNesti::$monPdo = null;
 	}
         
-        public  static function getPdoNesti()
+        public static function getPdoNesti()
 	{
 		if(PdoNesti::$monPdoNesti == null)
 		{
@@ -80,14 +80,24 @@ class PDONesti {
                     . "WHERE utilisateur.login = '$login' AND utilisateur.mdp = '$mdp"; // A revoir au niveau des villes.
             
         }
-    
-    public function getLesRecettes(){
-        $req = "SELECT theme.descript, nom, description FROM recette JOIN theme ON recette.Theme_idTheme = idTheme";
+    public function getLesRecettesSelonTheme($idCategorie)
+	{
+	    $req="select idRec, nom, description from recette join theme on recette.Theme_idTheme = theme.idTheme WHERE theme.descript = '$idCategorie'";
+            $res = PdoNesti::$monPdo->query($req);
+            $lesLignes = $res->fetchAll();
+            return $lesLignes; 
+	}
+        
+    public function getLesThemes(){
+        $req = "SELECT descript FROM theme";
 	$res = PdoNesti::$monPdo->query($req);
 	$lesLignes = $res->fetchAll();
 	return $lesLignes;
     }
-    public function getUneRecette(){
-        
+    public function getUneRecette($var){
+        $req = "SELECT idRec, nom, description FROM recette WHERE idRec = '$var'";
+	$res = PdoNesti::$monPdo->query($req);
+	$lesLignes = $res->fetchAll();
+	return $lesLignes;
     }
 }

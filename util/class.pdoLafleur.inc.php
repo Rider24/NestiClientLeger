@@ -70,9 +70,9 @@ class PdoLafleur
  * @return un tableau associatif  
 */
 
-	public function getLesProduitsDeCategorie($idCategorie)
+	public function getLesRecettesSelonTheme($idCategorie)
 	{
-	    $req="select * from produit where idCategorie = '$idCategorie'";
+	    $req="select nom, description from recette join theme on recette.Theme_idTheme = theme.idTheme WHERE theme.descript = '$idCategorie'";
 		$res = PdoLafleur::$monPdo->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes; 

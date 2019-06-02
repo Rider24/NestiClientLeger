@@ -20,7 +20,7 @@ switch($uc)
 	case 'accueil':
 		{include("vues/v_accueil.php");break;}
 	case 'voirProduits' :
-		{include("controleurs/c_voirProduits.php");break;}
+		{include("controleurs/c_voirRecettes.php");break;}
 	case 'gererPanier' :
 		{ include("controleurs/c_gestionPanier.php");break; }
 	case 'administrer' :
