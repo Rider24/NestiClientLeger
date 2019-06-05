@@ -1,3 +1,3 @@
 <div id="accueil">
-Lafleur, le prince des fleurs sur internet
+Degage y a rien a voir.
 </div>

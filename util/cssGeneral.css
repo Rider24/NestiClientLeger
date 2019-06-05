@@ -61,7 +61,8 @@ float:left;
 }
 
 #produits{
-padding:0 150px;
+    text-align: center;
+    font-family: cursive;
 }
 
 #contenu{
@@ -94,7 +95,6 @@ padding:0 150px;
     text-align:center;
 background:#ccff11;
 }
-
 
 #produits li, #produits li a {
 		list-style-type: none;
