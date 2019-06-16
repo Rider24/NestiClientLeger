@@ -25,6 +25,8 @@ switch($uc)
 		{ include("controleurs/c_gestionPanier.php");break; }
 	case 'administrer' :
 	  { include("controleurs/c_gestionProduits.php");break;  }
+        case 'espaceClient':
+            include("controleurs/c_userSpace.php");
 }
 include("vues/v_pied.php") ;
 ?>

@@ -100,4 +100,25 @@ class PDONesti {
 	$lesLignes = $res->fetchAll();
 	return $lesLignes;
     }
-}
+    public function verifPassword($login, $mdp){
+        $query = "SELECT idUser, nomUser, mail
+
+            FROM utilisateur WHERE login = '$login' AND mdp ='$mdp'";
+
+        $res = PdoNesti::$monPdo->query($query);
+
+        $data = $res->fetchColumn();
+
+        return $data;
+
+    }
+    public function verifPseudo($pseudo){
+    $query = "SELECT COUNT(*) AS nbr FROM utilisateur WHERE login = ''";
+    $res = PdoNesti::$monPdo->query($query);
+    $pseudo_free = ($res->fetchColumn() == 0) ? 1 : 0;
+    return $pseudo_free;
+    }
+    public function créeUsager(){
+        
+    }
+    }

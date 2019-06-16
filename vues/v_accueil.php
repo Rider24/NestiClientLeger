@@ -1,3 +1,3 @@
 <div id="accueil">
-Degage y a rien a voir.
+BIenvenue sur le super site de recettes.
 </div>

@@ -18,10 +18,8 @@
           Connexion
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Se connecter</a>
-          <a class="dropdown-item" href="#">S'inscrire</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="index.php?uc=espaceClient">Se connecter</a>
+          <a class="dropdown-item" href="index.php?uc=espaceClient&co=creation">S'inscrire</a>
         </div>
       </li>
     </ul>
